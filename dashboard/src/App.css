@@ -1,0 +1,9 @@
+/* App-specific styles */
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.chart-container svg {
+  max-width: 100%;
+  height: auto;
+}
