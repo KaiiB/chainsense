@@ -1,12 +1,11 @@
 export interface Wallet {
   wallet: string;
   tx_count: number;
+  active_blocks: number;
   tx_per_block: number;
-  burstiness: number;
   eth_sent: number;
   eth_recv: number;
-  avg_tx_value: number;
-  avg_gas: number;
+  avg_gas_price_gwei: number;
   total_gas_spent_eth: number;
   unique_counterparties: number;
   unique_contracts: number;
@@ -20,10 +19,8 @@ export interface Wallet {
 export interface ClusterStats {
   cluster_id: number;
   count: number;
-  mean_tx_count: number;
   mean_eth_sent: number;
   mean_eth_recv: number;
-  mean_burstiness: number;
   mean_counterparties: number;
   mean_contracts: number;
 }

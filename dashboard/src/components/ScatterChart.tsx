@@ -46,7 +46,7 @@ export const ScatterChart: React.FC<ScatterProps> = ({
       .range([height, 0])
       .nice();
 
-    const colorScale = d3.schemeCategory10;
+    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
     // Grid lines
     svg.append('g')
